@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Northeast Addiction and Mental Health Centre for Holistic Recovery nonprofit homepage for CALGARY, AB." name="description"/>
+<meta content="Northeast Addiction and Mental Health Centre for Holistic Recovery" property="og:title"/>
+<meta content="A grounded, holistic path to recovery in Calgary." property="og:description"/>
+<meta content="https://images.pexels.com/photos/10049592/pexels-photo-10049592.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" property="og:image"/>
+<title>Northeast Addiction and Mental Health Centre for Holistic Recovery</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Nunito:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+      --primary: #4A7C59;
+      --secondary: #8B6F47;
+      --accent: #D4A373;
+      --text: #2C2C2C;
+      --background: #FAF7F2;
+      --muted: #EFEBE4;
+      --line: rgba(17, 24, 39, 0.13);
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Nunito", sans-serif;
+      color: var(--text);
+      background: var(--background);
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+    .wrap { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
+    header {
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.96);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav {
+      min-height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+    .brand {
+      font-family: "Lora", sans-serif;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+    .hero {
+      min-height: 74vh;
+      display: grid;
+      align-items: end;
+      background:
+        linear-gradient(90deg, rgba(17, 24, 39, 0.82), rgba(17, 24, 39, 0.42)),
+        url("https://images.pexels.com/photos/10049592/pexels-photo-10049592.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940") center/cover no-repeat;
+      color: white;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.55fr);
+      gap: 32px;
+      align-items: end;
+      padding: 88px 0 72px;
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 0;
+      color: var(--accent);
+      margin: 0 0 10px;
+    }
+    h1, h2, h3 {
+      font-family: "Lora", sans-serif;
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+    h1 {
+      font-size: clamp(2.35rem, 6vw, 5.5rem);
+      max-width: 12ch;
+      margin: 0 0 18px;
+    }
+    .hero-copy {
+      max-width: 760px;
+      font-size: 1.08rem;
+      margin: 0 0 26px;
+    }
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .button {
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 12px 18px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .button.primary { background: var(--accent); color: #111827; }
+    .button.secondary { border: 1px solid rgba(255,255,255,0.5); color: white; }
+    .field-card {
+      background: white;
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+    }
+    .field-card p { margin: 0; }
+    .info-strip {
+      margin: -34px auto 0;
+      position: relative;
+      z-index: 4;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+      border: 1px solid var(--line);
+      background: white;
+      box-shadow: 0 18px 50px rgba(17,24,39,0.12);
+    }
+    .info-strip article {
+      padding: 18px;
+      min-height: 90px;
+      border-right: 1px solid var(--line);
+      display: grid;
+      align-content: center;
+      gap: 4px;
+    }
+    .info-strip span, .links-panel span {
+      color: rgba(17,24,39,0.62);
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+    .info-strip strong, .info-strip a {
+      color: var(--text);
+      font-weight: 800;
+      text-decoration: none;
+    }
+    section { padding: 68px 0; }
+    .section-title {
+      font-size: clamp(1.9rem, 4vw, 3.7rem);
+      margin: 0 0 14px;
+    }
+    .section-copy {
+      max-width: 780px;
+      margin: 0 0 28px;
+      color: rgba(17,24,39,0.78);
+    }
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+      gap: 32px;
+      align-items: center;
+    }
+    .paper {
+      background: var(--muted);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .program-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .program {
+      border: 1px solid var(--line);
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .program img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+    .program h3, .program p {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .program p { margin-bottom: 22px; }
+    .clean {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+    .clean li {
+      padding-left: 18px;
+      border-left: 4px solid var(--accent);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 1fr 0.9fr;
+      gap: 12px;
+      align-items: stretch;
+    }
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      min-height: 260px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 0.7fr);
+      gap: 28px;
+    }
+    .contact-form {
+      display: grid;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    input, textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 13px 14px;
+      font: inherit;
+    }
+    button {
+      min-height: 46px;
+      border: 0;
+      border-radius: 999px;
+      background: var(--primary);
+      color: white;
+      font-weight: 800;
+      padding: 12px 18px;
+      cursor: pointer;
+    }
+    .links-panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      background: white;
+    }
+    .links-panel p {
+      display: grid;
+      gap: 3px;
+      margin: 0 0 16px;
+    }
+    .links-panel a {
+      color: var(--primary);
+      font-weight: 800;
+      overflow-wrap: anywhere;
+    }
+    footer {
+      background: var(--secondary);
+      color: white;
+      padding: 40px 0;
+    }
+    footer a { color: white; }
+    @media (max-width: 900px) {
+      .hero-inner, .split, .contact-grid { grid-template-columns: 1fr; }
+      .program-grid { grid-template-columns: 1fr; }
+      .gallery { grid-template-columns: 1fr; }
+      .gallery img { min-height: 210px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+<div class="wrap nav">
+<div class="brand">Northeast Addiction and Mental Health Centre for Holistic Recovery</div>
+</div>
+</header>
+<main>
+<section class="hero">
+<div class="wrap hero-inner">
+<div>
+<p class="eyebrow">A grounded, holistic path to recovery in Calgary.</p>
+<h1>Find Your Path to Recovery</h1>
+<p class="hero-copy">NAM RESIDENTIAL TREATMENT PROGRAM RECOVERY COACHING AND COUNSELING PERSONALIZED RECOVERY PROGRAM INTENSIVE OUTPATIENT PROGRAM NAM ACADEMY ONLINE NAM RECOVERY GROUPS INTENSIVE FAMILY SUPPORT PROGRAM</p>
+<div class="cta-row">
+<a class="button primary" href="#summary">Read the Summary</a>
+<a class="button secondary" href="https://namrecovery.com">Check Source Record</a>
+</div>
+</div>
+<aside class="field-card">
+<p><strong>Caller note:</strong> this page gathers the imported nonprofit facts into one fast summary for outreach.</p>
+</aside>
+</div>
+</section>
+<div class="wrap info-strip"><article><span>Registration</span><strong>725357313RR0001</strong></article><article><span>Category</span><strong>Category 100</strong></article><article><span>Listed area</span><strong>CALGARY, AB</strong></article><article><span>Current website</span><a href="https://namrecovery.com" rel="noreferrer" target="_blank">Open site</a></article></div>
+<section id="summary">
+<div class="wrap split">
+<div>
+<h2 class="section-title">The work in one place</h2>
+<p class="section-copy">NAM RESIDENTIAL TREATMENT PROGRAM RECOVERY COACHING AND COUNSELING PERSONALIZED RECOVERY PROGRAM INTENSIVE OUTPATIENT PROGRAM NAM ACADEMY ONLINE NAM RECOVERY GROUPS INTENSIVE FAMILY SUPPORT PROGRAM</p>
+<ul class="clean"><li>Personalized recovery plans tailored to your needs.</li><li>Holistic approach addressing mind, body, and community.</li><li>Located in Calgary with accessible programs and online options.</li><li>Family involvement and support as a core component.</li></ul>
+</div>
+<img alt="Community nonprofit planning" loading="lazy" src="https://images.pexels.com/photos/6860501/pexels-photo-6860501.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px"/>
+</div>
+</section>
+<section class="paper" id="programs">
+<div class="wrap">
+<h2 class="section-title">Program and contact paths</h2>
+<p class="section-copy">The site uses only the supplied organization record, then organizes it so a supporter, donor, or caller can act faster.</p>
+<div class="program-grid"><article class="program"><img alt="Residential Treatment Program" height="675" loading="lazy" src="https://images.pexels.com/photos/3989603/pexels-photo-3989603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/><h3>Residential Treatment Program</h3><p>Structured, live-in recovery support with personalized care plans.</p></article><article class="program"><img alt="Recovery Coaching &amp; Counseling" height="675" loading="lazy" src="https://images.pexels.com/photos/6192848/pexels-photo-6192848.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/><h3>Recovery Coaching &amp; Counseling</h3><p>One-on-one guidance to navigate your recovery journey.</p></article><article class="program"><img alt="Intensive Outpatient Program" height="675" loading="lazy" src="https://images.pexels.com/photos/55692/pexels-photo-55692.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/><h3>Intensive Outpatient Program</h3><p>Flexible daytime or evening sessions for ongoing support.</p></article><article class="program"><img alt="Family Support Program" height="675" loading="lazy" src="https://images.pexels.com/photos/406990/pexels-photo-406990.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/><h3>Family Support Program</h3><p>Resources and groups for families affected by addiction.</p></article></div>
+</div>
+</section>
+<section>
+<div class="wrap">
+<h2 class="section-title">Community context</h2>
+<p class="section-copy">Serving Calgary, Alberta, and surrounding areas.</p>
+<div class="gallery"><img alt="gallery 1" height="675" loading="lazy" src="https://images.pexels.com/photos/12025139/pexels-photo-12025139.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/><img alt="gallery 2" height="675" loading="lazy" src="https://images.pexels.com/photos/15686007/pexels-photo-15686007.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/><img alt="gallery 3" height="675" loading="lazy" src="https://images.pexels.com/photos/32842460/pexels-photo-32842460.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/><img alt="gallery 4" height="675" loading="lazy" src="https://images.pexels.com/photos/6648591/pexels-photo-6648591.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/></div>
+</div>
+</section>
+<section class="paper">
+<div class="wrap">
+<h2 class="section-title">What happens next</h2>
+<ul class="clean">
+<li>Call or email with the reason for reaching out.</li>
+<li>Ask about the program, donation, volunteer, or support details.</li>
+<li>Confirm the contact path from the organization record.</li>
+</ul>
+</div>
+</section>
+<section id="contact">
+<div class="wrap contact-grid">
+<div>
+<h2 class="section-title">Contact Northeast Addiction and Mental Health Centre for Holistic Recovery</h2>
+<p class="section-copy">Use the saved details below when calling, emailing, or checking the original organization links.</p>
+<form action="mailto:accounting@namrecovery.com" class="contact-form" enctype="text/plain" method="post">
+<input name="Name" placeholder="Name" required="" type="text"/>
+<input name="Email" placeholder="Email" required="" type="email"/>
+<input name="Phone" placeholder="Phone" type="tel"/>
+<textarea name="Message" placeholder="How would you like to connect?" required="" rows="5"></textarea>
+<button type="submit">Send email</button>
+</form>
+</div>
+<aside class="links-panel">
+<h3>Saved contact details</h3>
+<p><span>Current website</span><a href="https://namrecovery.com" rel="noreferrer" target="_blank">https://namrecovery.com</a></p><p><span>Email</span><a href="mailto:accounting@namrecovery.com" rel="noreferrer" target="_blank">accounting@namrecovery.com</a></p><p><span>Phone</span><a href="tel:+5877774722" rel="noreferrer" target="_blank">(587) 777-4722</a></p>
+<p><span>Address</span><strong>1700 - 421 7 AVE SW</strong></p>
+</aside>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<p>Northeast Addiction and Mental Health Centre for Holistic Recovery | CALGARY, AB</p>
+<ul class="clean"><li><a href="https://www.pexels.com/photo/a-woman-in-a-forest-10049592/" rel="noreferrer" target="_blank">Photos by JK Holland via Pexels</a></li><li><a href="https://www.pexels.com/photo/a-group-of-people-singing-in-a-room-6860501/" rel="noreferrer" target="_blank">Photos by Tima Miroshnichenko via Pexels</a></li><li><a href="https://www.pexels.com/photo/person-lying-on-couch-reading-a-book-3989603/" rel="noreferrer" target="_blank">Photos by Lisa from Pexels via Pexels</a></li><li><a href="https://www.pexels.com/photo/a-man-and-a-woman-sitting-on-a-bench-at-a-park-6192848/" rel="noreferrer" target="_blank">Photos by Claiton  Conto via Pexels</a></li><li><a href="https://www.pexels.com/photo/gray-pile-of-stone-beside-body-of-water-55692/" rel="noreferrer" target="_blank">Photos by Neel Upadhyay via Pexels</a></li><li><a href="https://www.pexels.com/photo/flatlay-photography-of-person-holding-cup-406990/" rel="noreferrer" target="_blank">Photos by Burst via Pexels</a></li><li><a href="https://www.pexels.com/photo/crouching-man-volunteering-in-a-garden-12025139/" rel="noreferrer" target="_blank">Photos by Alfo Medeiros via Pexels</a></li><li><a href="https://www.pexels.com/photo/blank-canvases-on-table-in-workshop-15686007/" rel="noreferrer" target="_blank">Photos by Natali Smirnova via Pexels</a></li><li><a href="https://www.pexels.com/photo/tranquil-sunrise-over-lake-garda-italy-32842460/" rel="noreferrer" target="_blank">Photos by Felix Kiss via Pexels</a></li><li><a href="https://www.pexels.com/photo/a-man-meditating-inside-a-studio-6648591/" rel="noreferrer" target="_blank">Photos by Ivan S via Pexels</a></li></ul>
+<p>© 2026 Northeast Addiction and Mental Health Centre for Holistic Recovery</p>
+</div>
+</footer>
+</body>
+</html>
